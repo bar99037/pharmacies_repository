@@ -1,4 +1,4 @@
 library pharmacies_repository;
 
-export 'src/models/pharmacies.dart';
+export 'src/models/pharmacy.dart';
 export 'src/pharmacies_repository.dart';

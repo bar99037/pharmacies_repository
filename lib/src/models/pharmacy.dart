@@ -1,19 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
 
-class Pharmacies {
+@HiveType(typeId: 0)
+class Pharmacy extends HiveObject{
+  @HiveField(0)
   String id;
+  @HiveField(1)
   String name;
+  @HiveField(2)
   String phone;
+  @HiveField(3)
   String address;
+  @HiveField(4)
   int maskAdult;
+  @HiveField(5)
   int maskChild;
+  @HiveField(6)
   DateTime updated;
+  @HiveField(7)
   String county;
 
-  Pharmacies({@required this.id, this.name, this.phone, this.address, this.maskAdult, this.maskChild, this.updated, this.county});
+  Pharmacy({@required this.id, this.name, this.phone, this.address, this.maskAdult, this.maskChild, this.updated, this.county});
 
-  Pharmacies.fromJson(Map<String, dynamic> json)
+  Pharmacy.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         name = json['name'],
         phone = json['phone'],
