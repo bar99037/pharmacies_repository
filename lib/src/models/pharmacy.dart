@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
 
+part 'pharmacy.g.dart';
+
 @HiveType(typeId: 0)
 class Pharmacy extends HiveObject{
   @HiveField(0)
