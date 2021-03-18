@@ -1,6 +1,6 @@
 # pharmacies_repository
 
-提供台中藥局口罩資料
+提供藥局口罩資料
 
 ## Getting Started
 
